@@ -1,0 +1,5 @@
+name: 'Enphase_envoy'
+packageKey: 'com.smartthings.enphaseenvoy'
+permissions:
+  discovery: {}
+  lan: {}

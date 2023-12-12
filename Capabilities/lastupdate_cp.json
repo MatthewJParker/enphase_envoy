@@ -1,0 +1,19 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{lastupdate.value}}"
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "Last Update",
+            "displayType": "state",
+            "state": {
+                "label": "{{lastupdate.value}}"
+            }
+        }
+    ]
+}

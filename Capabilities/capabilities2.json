@@ -1,0 +1,37 @@
+{
+  "id": "importedEnergy",
+  "version": 1,
+  "status": "live",
+  "ephemeral": false,
+  "name": "ImportedEnergy",
+  "attributes": {
+    "importedEnergy": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["value"]
+      },
+      "setter": "setImportedEnergy",
+      "enumCommands": []
+    }
+  },
+  "commands": {
+    "setImportedEnergy": {
+      "name": "setImportedEnergy",
+      "arguments": [
+        {
+          "name": "energy",
+          "optional": false,
+          "schema": {
+            "type": "number"
+          }
+        }
+      ]
+    }
+  }
+}

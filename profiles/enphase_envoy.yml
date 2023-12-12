@@ -1,0 +1,112 @@
+# enphase_envoy-profile
+name: enphase_envoy
+components:
+  - id: main
+    capabilities:
+      - id: switch
+        version: 1
+      - id: wanderdream36822.batteryCharge
+        version: 1
+      - id: wanderdream36822.envoyEnphaseV7
+        version: 1
+      - id: wanderdream36822.envoyModeV10
+        version: 1
+      - id: wanderdream36822.lastUpdate
+        version: 1
+      - id: refresh
+        version: 1
+  - id: s2
+    capabilities:
+      - id: switch
+        version: 1
+preferences:
+  - title: "Enphase IP Address"
+    name: ipaddress
+    description: "Enphase Envoy IP address"
+    required: true
+    preferenceType: string
+    definition:
+      minLength: 7
+      maxLength: 15
+      stringType: text
+      default: 192.168.10.245
+  - title: "Tokenp1"
+    name: tokenp1
+    description: "Token First Part (Max 255 chars) Optional"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+      default:
+  - title: "Tokenp2"
+    name: tokenp2
+    description: "Token Second Part (Max 255 chars) Optional"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+      default:
+  - title: "EdgeBridge IP"
+    name: edgebridgeipaddress
+    description: "EdgeBridge IP address"
+    required: false
+    preferenceType: string
+    definition:
+      minLength: 7
+      maxLength: 15
+      stringType: text
+      default: 192.168.10.200
+  - title: "EdgeBridge Port"
+    name: edgebridgeport
+    description: "EdgeBridge Port"
+    required: false
+    preferenceType: integer
+    definition:
+      minimum: 0
+      maximum: 366536
+      default: 8088
+  - title: "Serial"
+    name: serial
+    description: "Serial (12 numbers)"
+    required: false
+    preferenceType: string
+    definition:
+      minLength: 12
+      maxLength: 12
+      stringType: text
+      default: xxxxxxxxxxxx
+  - title: "Username"
+    name: username
+    description: "Username"
+    required: false
+    preferenceType: string
+    definition:
+      minLength: 3
+      maxLength: 100
+      stringType: text
+      default: name@domain
+  - title: "Password"
+    name: password
+    description: "Password"
+    required: false
+    preferenceType: string
+    definition:
+      minLength: 5
+      maxLength: 100
+      stringType: password
+      default: password
+  - title: "Refresh rate"
+    name: refresh
+    "description": "How often to refresh the live status"
+    required: true
+    preferenceType: enumeration
+    definition:
+      options:
+        "1": "20 Seconds"
+        "2": "40 Seconds"
+        "3": "1 Minute"
+        "6": "2 Minutes"
+        "15": "5 Minutes"
+        "30": "10 Minutes"
+        "45": "15 Minutes"
+      default: "1"

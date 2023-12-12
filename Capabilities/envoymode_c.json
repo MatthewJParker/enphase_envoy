@@ -1,0 +1,50 @@
+{
+    "name": "Envoy Mode V10",
+    "status": "proposed",
+    "attributes": {
+        "envoymode": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "string",
+                        "enum": [
+                            "Producing/Exporting",
+                            "Producing/Charging",
+			    "Producing",
+                            "Producing/Discharging",
+                            "Discharging",
+                            "Producing/Discharging/Importing",
+                            "Discharging/Importing",
+                            "Importing/Producing",
+                            "Importing",
+                            "Discharging/Exporting",
+                            "Unknown"
+                        ]
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        },
+        "envoymodeno": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value"
+              ]
+          },
+          "enumCommands": []
+      }
+    },
+    "commands": {}
+}

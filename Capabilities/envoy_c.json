@@ -1,0 +1,163 @@
+{
+  "name": "Envoy Enphase v7",
+  "status": "proposed",
+  "attributes": {
+      "importedenergy": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0 
+                 },
+	         "unit": {
+                    "type": "string",
+                    "enum": [
+                      "W",
+                      "Wh",
+                      "kW",
+                      "kWh"
+                    ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+		 "unit"
+              ]
+          },
+          "enumCommands": []
+      },
+      "exportedenergy": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0
+                 },
+                 "unit": {
+                    "type": "string",
+                   "enum": [
+                     "W",
+                     "Wh",
+                     "kW",
+                     "kWh"
+                   ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+                 "unit"
+              ]
+          },
+          "enumCommands": []
+      },
+      "producedenergy": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0
+                 },
+                 "unit": {
+                    "type": "string",
+                   "enum": [
+                     "W",
+                     "Wh",
+                     "kW",
+                     "kWh"
+                   ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+                 "unit"
+              ]
+          },
+          "enumCommands": []
+      },
+      "consumedenergy": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0
+                 },
+                 "unit": {
+                    "type": "string",
+                   "enum": [
+                     "W",
+                     "Wh",
+                     "kW",
+                     "kWh"
+                   ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+                 "unit"
+              ]
+          },
+          "enumCommands": []
+      },
+      "dischargedenergy": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0
+                 },
+                 "unit": {
+                    "type": "string",
+                   "enum": [
+                     "W",
+                     "Wh",
+                     "kW",
+                     "kWh"
+                   ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+                 "unit"
+              ]
+          },
+          "enumCommands": []
+      },
+      "chargedenergy": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0
+                 },
+                 "unit": {
+                    "type": "string",
+                   "enum": [
+                     "W",
+                     "Wh",
+                     "kW",
+                     "kWh"
+                   ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+                 "unit"
+              ]
+          },
+          "enumCommands": []
+      }
+  },
+  "commands": {}
+}

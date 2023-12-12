@@ -1,0 +1,31 @@
+{
+  "name": "Battery Charge",
+  "status": "proposed",
+  "attributes": {
+      "charge": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0, 
+                    "maximum": 100
+                 },
+	         "unit": {
+                    "type": "string",
+                    "enum": [
+                      "%"
+                    ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+		 "unit"
+              ]
+          },
+          "enumCommands": []
+      },
+  },
+  "commands": {}
+}

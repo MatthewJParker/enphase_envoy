@@ -1,0 +1,22 @@
+Mode:
+"Importing" Really Bad
+"Exporting/Battery" Nectr
+"Exporting/Producing" Great
+"Battery" Okay
+Battery/Importing Really Really Bad
+Nill
+
+
+Producing/Exporting - 10
+Producing/Charging - 9
+Producing/Discharging -8
+Discharging - 7
+Producing/Discharging/Importing - 6
+Discharging/Importing  - 5
+Importing/Producing - 4
+Importing - 3
+Discharging/Exporting - 1
+Offline
+
+Exporting
+Producing

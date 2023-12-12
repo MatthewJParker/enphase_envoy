@@ -1,0 +1,57 @@
+{
+  "id": "wanderdream36822.exportenergy",
+  "name": "Envoy Enphase",
+  "version": 1,
+  "status": "proposed",
+  "attributes": {
+      "importedenergy": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0 
+                 },
+	         "unit": {
+                    "type": "string",
+                    "enum": [
+                       "W",
+                       "WH"
+                    ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+		 "unit"
+              ]
+          },
+          "enumCommands": []
+      },
+      "exportedenergy": {
+          "schema": {
+              "type": "object",
+              "properties": {
+                 "value": {
+                    "type": "number",
+                    "minimum": 0
+                 },
+                 "unit": {
+                    "type": "string",
+                    "enum": [
+                       "W",
+                       "WH"
+                    ]
+                 }
+              },
+              "additionalProperties": false,
+              "required": [
+                 "value",
+		 "unit"
+              ]
+          },
+          "enumCommands": []
+      }
+  },
+  "commands": {}
+}

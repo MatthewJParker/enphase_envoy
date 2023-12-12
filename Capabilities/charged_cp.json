@@ -1,0 +1,51 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{exportedenergy.value}} {{exportedenergy.unit}}",
+                "alternatives": [
+                    {
+                        "key": "%",
+                        "value": "%",
+                        "type": "active"
+                    }
+                ]
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "Charge",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    100 
+                ],
+                "step": 1,
+                "unit": "charge.unit",
+                "value": "charge.value",
+                "valueType": "number"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Charge",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "charge.value",
+                    "valueType": "number",
+                    "unit": "charge.unit",
+                    "range": [
+                        0,
+                        100
+                    ]
+                }
+            }
+        ],
+        "actions": []
+    }
+}

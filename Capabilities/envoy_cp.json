@@ -1,0 +1,195 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{exportedenergy.value}} {{exportedenergy.unit}}",
+                "alternatives": [
+                    {
+                        "key": "W",
+                        "value": "Watts",
+                        "type": "active"
+                    },
+                    {
+                        "key": "Wh",
+                        "value": "Watt Hours",
+                        "type": "active"
+                    },
+                    {
+                        "key": "kW",
+                        "value": "Kilo Watt Hours",
+                        "type": "active"
+                    }
+                ]
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "Imported Energy",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    20000 
+                ],
+                "step": 1,
+                "unit": "importedenergy.unit",
+                "value": "importedenergy.value",
+                "valueType": "number"
+            }
+        },
+	{
+            "label": "Exported Energy",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    20000
+                ],
+                "step": 1,
+                "unit": "exportedenergy.unit",
+                "value": "exportedenergy.value",
+                "valueType": "number"
+            }
+        },
+	{
+            "label": "Produced Energy",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    20000 
+                ],
+                "step": 1,
+                "unit": "producedenergy.unit",
+                "value": "producedenergy.value"
+            }
+        },
+	{
+            "label": "Consumed Energy",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    20000
+                ],
+                "step": 1,
+                "unit": "consumedenergy.unit",
+                "value": "consumedenergy.value",
+                "valueType": "number"
+            }
+        },
+	{
+            "label": "Discharged Energy",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    20000 
+                ],
+                "step": 1,
+                "unit": "dischargedenergy.unit",
+                "value": "dischargedenergy.value",
+                "valueType": "number"
+            }
+        },
+	{
+            "label": "Charged Energy",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    20000
+                ],
+                "step": 1,
+                "unit": "chargedenergy.unit",
+                "value": "chargedenergy.value",
+                "valueType": "number"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Imported Energy",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "importedenergy.value",
+                    "valueType": "number",
+                    "unit": "importedenergy.unit",
+                    "range": [
+                        0,
+                        20000
+                    ]
+                }
+            },
+            {
+                "label": "Exported Energy",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "exportedenergy.value",
+                    "valueType": "number",
+                    "unit": "exportedenergy.unit",
+                    "range": [
+                        0,
+                        20000
+                    ]
+                }
+            },
+            {
+                "label": "Produced Energy",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "producedenergy.value",
+                    "valueType": "number",
+                    "unit": "producedenergy.unit",
+                    "range": [
+                        0,
+                        20000
+                    ]
+                }
+            },
+	    {
+                "label": "Consumed Energy",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "consumedenergy.value",
+                    "valueType": "number",
+                    "unit": "consumedenergy.unit",
+                    "range": [
+                        0,
+                        20000 
+                    ]
+                }
+            },
+	    {
+                "label": "Discharged Energy",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "dischargedenergy.value",
+                    "valueType": "number",
+                    "unit": "dischargedenergy.unit",
+                    "range": [
+                        0,
+                        20000
+                    ]
+                }
+            },
+	    {
+                "label": "Charged Energy",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "chargedenergy.value",
+                    "valueType": "number",
+                    "unit": "chargedenergy.unit",
+                    "range": [
+                        0,
+                        20000
+                    ]
+                }
+            }
+        ],
+        "actions": []
+    }
+}

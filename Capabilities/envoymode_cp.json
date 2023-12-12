@@ -1,0 +1,114 @@
+{ 
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{envoymode.value}}"
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "Envoy Mode",
+            "displayType": "state",
+            "state": {
+                "label": "{{envoymode.value}}"
+            }
+        },
+	{
+            "label": "Envoy Mode No",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    10
+                ],
+                "step": 1,
+                "value": "envoymodeno.value"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Envoy Mode",
+                "displayType": "list",
+		"list": {
+			"alternatives": [
+                         {
+                            "key": "Producing/Exporting",
+                            "value": "Producing/Exporting",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Producing/Charging",
+                            "value": "Producing/Charging",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Producing",
+                            "value": "Producing",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Producing/Discharging",
+                            "value": "Producing/Discharging",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Discharging",
+                            "value": "Discharging",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Producing/Discharging/Importing",
+                            "value": "Producing/Discharging/Importing",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Discharging/Importing",
+                            "value": "Discharging/Importing",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Importing/Producing",
+                            "value": "Importing/Producing",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Importing",
+                            "value": "Importing",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Discharging/Exporting",
+                            "value": "Discharging/Exporting",
+                            "type": "active"
+                         },
+                         {
+                            "key": "Unknown",
+                            "value": "Unkown",
+                            "type": "active"
+                         }
+			],
+                "value": "envoymode.value",
+                "valueType": "string",
+                "multiSelectable": false
+		}
+            },
+	    {
+                "label": "Envoy Mode No",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "envoymodeno.value",
+                    "valueType": "number",
+                    "range": [
+                        0,
+                        10
+                    ]
+                }
+            }
+	],
+        "actions": []
+    }
+}
