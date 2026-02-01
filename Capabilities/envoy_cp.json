@@ -2,11 +2,27 @@
     "dashboard": {
         "states": [
             {
-                "label": "{{exportedenergy.value}} {{exportedenergy.unit}}"
+                "label": "{{exportedenergy.value}} {{exportedenergy.unit}}",
+                "alternatives": [
+                    {
+                        "key": "W",
+                        "value": "Watts",
+                        "type": "active"
+                    },
+                    {
+                        "key": "Wh",
+                        "value": "Watt Hours",
+                        "type": "active"
+                    },
+                    {
+                        "key": "kW",
+                        "value": "Kilo Watt Hours",
+                        "type": "active"
+                    }
+                ]
             }
         ],
-        "actions": [],
-        "panelItems": []
+        "actions": []
     },
     "detailView": [
         {

@@ -54,6 +54,10 @@ local envoy_driver = Driver("envoy", {
     infoChanged = command_handlers.do_Preferences
   },
   capability_handlers = {
+    [capabilities.switch.ID] = {
+      [capabilities.switch.commands.on.NAME] = command_handlers.switch_on,
+      [capabilities.switch.commands.off.NAME] = command_handlers.switch_off,
+    },
     [capabilities.refresh.ID] = {
       [capabilities.refresh.commands.refresh.NAME] = command_handlers.do_refresh,
     }
