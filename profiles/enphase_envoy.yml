@@ -3,21 +3,29 @@ name: enphase_envoy
 components:
   - id: main
     capabilities:
-      - id: switch
+      - id: energyMeter
+        version: 1
+      - id: powerMeter
+        version: 1
+      - id: bookabate38797.envoyEnphase
         version: 1
       - id: wanderdream36822.batteryCharge
-        version: 1
-      - id: wanderdream36822.envoyEnphaseV7
         version: 1
       - id: wanderdream36822.envoyModeV10
         version: 1
       - id: wanderdream36822.lastUpdate
         version: 1
+      - id: voltageMeasurement
+        version: 1
+      - id: powerConsumptionReport
+        version: 1
       - id: refresh
         version: 1
-  - id: s2
+    categories:
+      - name: SolarPanel
+  - id: history
     capabilities:
-      - id: switch
+      - id: bookabate38797.envoyEnphaseHistoryV4
         version: 1
 preferences:
   - title: "Enphase IP Address"

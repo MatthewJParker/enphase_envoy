@@ -2,93 +2,92 @@
     "dashboard": {
         "states": [
             {
-                "label": "{{exportedenergy.value}} {{exportedenergy.unit}}"
+                "label": "{{totalconsumptiontoday.value}}",
             }
         ],
-        "actions": [],
-        "panelItems": []
+        "actions": []
     },
     "detailView": [
         {
-            "label": "Imported Energy",
+            "label": "Total Production Today",
             "displayType": "slider",
             "slider": {
                 "range": [
                     0,
-                    20000 
+                    2000 
                 ],
                 "step": 1,
-                "unit": "importedenergy.unit",
-                "value": "importedenergy.value",
+                "unit": "productiontoday.unit",
+                "value": "productiontoday.value",
                 "valueType": "number"
             }
         },
 	{
-            "label": "Exported Energy",
+            "label": "Total Production Seven Days",
             "displayType": "slider",
             "slider": {
                 "range": [
                     0,
-                    20000
+                    2000
                 ],
                 "step": 1,
-                "unit": "exportedenergy.unit",
-                "value": "exportedenergy.value",
+                "unit": "productionsevendays.unit",
+                "value": "productionsevendays.value",
                 "valueType": "number"
             }
         },
 	{
-            "label": "Produced Energy",
+            "label": "Total Production Liftime",
             "displayType": "slider",
             "slider": {
                 "range": [
                     0,
-                    20000 
+                    200000
                 ],
                 "step": 1,
-                "unit": "producedenergy.unit",
-                "value": "producedenergy.value"
-            }
-        },
-	{
-            "label": "Consumed Energy",
-            "displayType": "slider",
-            "slider": {
-                "range": [
-                    0,
-                    20000
-                ],
-                "step": 1,
-                "unit": "consumedenergy.unit",
-                "value": "consumedenergy.value",
+                "unit": "productionlifetime.unit",
+                "value": "productionlifetime.value",
                 "valueType": "number"
             }
         },
 	{
-            "label": "Discharged Energy",
+            "label": "Total Consumption Today",
             "displayType": "slider",
             "slider": {
                 "range": [
                     0,
-                    20000 
+                    2000 
                 ],
                 "step": 1,
-                "unit": "dischargedenergy.unit",
-                "value": "dischargedenergy.value",
+                "unit": "totalconsumptiontoday.unit",
+                "value": "totalconsumptiontoday.value"
+            }
+        },
+	{
+            "label": "Total Consumption Seven Days",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    2000
+                ],
+                "step": 1,
+                "unit": "totalconsumptionsevendays.unit",
+                "value": "totalconsumptionsevendays.value",
                 "valueType": "number"
             }
         },
 	{
-            "label": "Charged Energy",
+            "label": "Total Consumption Lifetime",
             "displayType": "slider",
             "slider": {
                 "range": [
                     0,
-                    20000
+                    200000 
                 ],
                 "step": 1,
-                "unit": "chargedenergy.unit",
-                "value": "chargedenergy.value",
+                "unit": "totalconsumptionlifetime.unit",
+                "value": "totalconsumptionlifetime.value",
                 "valueType": "number"
             }
         }
@@ -96,80 +95,80 @@
     "automation": {
         "conditions": [
             {
-                "label": "Imported Energy",
+                "label": "Total Production Today",
                 "displayType": "numberField",
                 "numberField": {
-                    "value": "importedenergy.value",
+                    "value": "productiontoday.value",
                     "valueType": "number",
-                    "unit": "importedenergy.unit",
+                    "unit": "productiontoday.unit",
                     "range": [
                         0,
-                        20000
+                        2000
                     ]
                 }
             },
             {
-                "label": "Exported Energy",
+                "label": "Total Production Seven Days",
                 "displayType": "numberField",
                 "numberField": {
-                    "value": "exportedenergy.value",
+                    "value": "productionsevendays.value",
                     "valueType": "number",
-                    "unit": "exportedenergy.unit",
+                    "unit": "productionsevendays.unit",
                     "range": [
                         0,
-                        20000
+                        2000
                     ]
                 }
             },
             {
-                "label": "Produced Energy",
+                "label": "Total Production Liftime",
                 "displayType": "numberField",
                 "numberField": {
-                    "value": "producedenergy.value",
+                    "value": "productionlifetime.value",
                     "valueType": "number",
-                    "unit": "producedenergy.unit",
+                    "unit": "productionlifetime.unit",
                     "range": [
                         0,
-                        20000
+                        200000
                     ]
                 }
             },
 	    {
-                "label": "Consumed Energy",
+                "label": "Total Consumption Today",
                 "displayType": "numberField",
                 "numberField": {
-                    "value": "consumedenergy.value",
+                    "value": "totalconsumptiontoday.value",
                     "valueType": "number",
-                    "unit": "consumedenergy.unit",
+                    "unit": "totalconsumptiontoday.unit",
                     "range": [
                         0,
-                        20000 
+                        2000 
                     ]
                 }
             },
 	    {
-                "label": "Discharged Energy",
+                "label": "Total Consumption Seven Days",
                 "displayType": "numberField",
                 "numberField": {
-                    "value": "dischargedenergy.value",
+                    "value": "totalconsumptionsevendays.value",
                     "valueType": "number",
-                    "unit": "dischargedenergy.unit",
+                    "unit": "totalconsumptionsevendays.unit",
                     "range": [
                         0,
-                        20000
+                        2000
                     ]
                 }
             },
 	    {
-                "label": "Charged Energy",
+                "label": "Total Consumption Lifetime",
                 "displayType": "numberField",
                 "numberField": {
-                    "value": "chargedenergy.value",
+                    "value": "totalconsumptionlifetime.value",
                     "valueType": "number",
-                    "unit": "chargedenergy.unit",
+                    "unit": "totalconsumptionlifetime.unit",
                     "range": [
                         0,
-                        20000
+                        200000
                     ]
                 }
             }

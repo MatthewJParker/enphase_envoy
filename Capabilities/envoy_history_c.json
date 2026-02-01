@@ -1,8 +1,8 @@
 {
-  "name": "Envoy Enphase",
+  "name": "Envoy Enphase History v4",
   "status": "proposed",
   "attributes": {
-      "importedenergy": {
+      "productiontoday": {
           "schema": {
               "type": "object",
               "properties": {
@@ -28,7 +28,7 @@
           },
           "enumCommands": []
       },
-      "exportedenergy": {
+      "productionsevendays": {
           "schema": {
               "type": "object",
               "properties": {
@@ -54,7 +54,7 @@
           },
           "enumCommands": []
       },
-      "producedenergy": {
+      "productionlifetime": {
           "schema": {
               "type": "object",
               "properties": {
@@ -80,7 +80,7 @@
           },
           "enumCommands": []
       },
-      "consumedenergy": {
+      "totalconsumptiontoday": {
           "schema": {
               "type": "object",
               "properties": {
@@ -106,7 +106,7 @@
           },
           "enumCommands": []
       },
-      "dischargedenergy": {
+      "totalconsumptionsevendays": {
           "schema": {
               "type": "object",
               "properties": {
@@ -132,7 +132,7 @@
           },
           "enumCommands": []
       },
-      "chargedenergy": {
+      "totalconsumptionlifetime": {
           "schema": {
               "type": "object",
               "properties": {
