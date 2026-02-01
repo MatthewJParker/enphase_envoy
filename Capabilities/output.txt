@@ -1,0 +1,50 @@
+   "msgType": "WriteDevice",
+   "mac": "3c71bf6e6ce40001",
+   "DeviceType": "10000000",
+   "AccessToken": "17371B6A285EF2DD88810B9452ABF36E",
+   "msgID": "20231118215322537763",
+   "msgID": "20231118113258103892"
+   "msgID": "2023111810522765258",
+   "data": {
+      "operation": 1
+
+{
+        "msgType": "WriteDevice",
+        "mac": "3c71bf6e6ce40001",
+        "DeviceType": "10000000",
+        "AccessToken": "17371B6A285EF2DD88810B9452ABF36E",
+        "msgID": "2023111810522765258",
+        "data": {
+            "operation": 1        }
+}
+
+{"msgType":"WriteDeviceAck","mac":"3c71bf6e6ce40001","deviceType":"10000000","msgID":"20231118215721618","data":{"type":8,"operation":2,"currentPosition":95,"currentAngle":180,"currentState":3,"voltageMode":0,"batteryLevel":0,"chargingState":0,"wirelessMode":1,"speedLevel":0,"RSSI":-74}}
+
+{
+   "msgType": "WriteDeviceAck",
+   "mac": "3c71bf6e6ce40001",
+   "deviceType": "10000000",
+   "msgID": "20231118215819654",
+   "data": {
+      "type": 8,
+      "operation": 2,
+      "currentPosition": 95,
+      "currentAngle": 180,
+      "currentState": 3,
+      "voltageMode": 0,
+      "batteryLevel": 0,
+      "chargingState": 0,
+      "wirelessMode": 1,
+      "speedLevel": 0,
+      "RSSI": -74
+   }
+}
+
+
+
+
+{"msgType":"WriteDeviceAck","mac":"3c71bf6e6ce40001","deviceType":"10000000","msgID":"20231120204422827","data":{"type":8,"operation":2,"currentPosition":100,"currentAngle":0,"currentState":3,"voltageMode":0,"batteryLevel":0,"chargingState":0,"wirelessMode":1,"speedLevel":0,"RSSI":-92}}
+
+{"msgType":"WriteDeviceAck","mac":"3c71bf6e6ce40001","deviceType":"10000000","msgID":"20231120204507271","data":{"type":8,"operation":2,"currentPosition":87,"currentAngle":180,"currentState":3,"voltageMode":0,"batteryLevel":0,"chargingState":0,"wirelessMode":1,"speedLevel":0,"RSSI":-77}}
+
+{"msgType":"WriteDeviceAck","mac":"3c71bf6e6ce40001","deviceType":"10000000","msgID":"20231120234321142","data":{"type":8,"operation":2,"currentPosition":100,"currentAngle":15,"currentState":3,"voltageMode":0,"batteryLevel":0,"chargingState":0,"wirelessMode":1,"speedLevel":0,"RSSI":-84}}
